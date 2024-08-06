@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="headers-content-container">
+        <div class="headers-content-content">
+            <div class="headers-content-left">V E N I A</div>
+            <div class="headers-content-center">
+                <a style="border-bottom:2px solid white" href="#">Home</a>
+                <a href="#">Women</a>
+                <a href="#" >Men</a>
+                <a href="#">Smart Gear</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="search-bar">
+                <input type="search" id="search-products" name="search-products" placeholder="Search Products...">
+                <div id="clear-icon" class="clear-icon"></div>
+            </div>
+            <div class="headers-content-right">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVElEQVR4nO3SMUvDQBjG8UixDgZx6li/RifBLgpO2u/RXa2LiGKXbl1dFFeL7jq42S2bLhYqiuDUpQjlL6dvMdTLe4fmxKEPhIa+99yvlzSKpvlvAUrADXBr7v8STfhKMsaBAtACXoD1UGgycb8EnKd+0DAXnO9oaeK7N/l8Bc5ywbGgGTOTZWBGHvnPcD7f2bGUf5uh7FXwgTfJPxs+8G4AuOEDty3FLWAe2FY219a0feCOpbgoszkFLsqa2DLr+MBdS3E/NbcmNd+zjLs+8LNjYxdsy5MLnQVGGeVY1jxaZn2ZLWR0R2ZvDS5nnQhYkTWHltmBzKpKv6zBFaV4IWuKgpuT9w2a+mNdKv2KBtfQs6N0G45uTYPrjvLHyeWRxnJVHScdp67BTcLlSINPA8InGnwdEL7S4PuA8J0GDwLCAw3uBYQfNHgtEN4DVjPhaaKAeQfwCi7zcIO1CwAAAABJRU5ErkJggg=="
+                    alt="Cart">
+            </div>
+        </div>
+        <div class="mobile-headers-content">
+            <div class="mobile-headers-content-left">
+                <div class="menu" id="menu">
+                    <div class="menu-headers-content">
+                        <div>Filters</div>
+                        <a class="menu-close" id="drawerClose">×</a>
+                    </div>
+
+                    <div class="menu-content">
+                        <div class="underline">Clear All</div>
+                        <div class="headers-content-menu-splitter"></div>
+                        <div class="headers-content-menu-filter">
+                            <div class="filter-subheader-title">Categories</div>
+                            <div class="fil">
+                                <input  type="checkbox" id="jewellery" name="jewellery" value="jewelery">
+                                <label for="jewellery"> Jewellery</label><br>
+                            </div>
+                            <div class="fil">
+                            <input  type="checkbox" id="electronics" name="electronics" value="electronics">
+                            <label for="electronics"> Electronics</label><br></div>
+                            <div class="fil">
+                            <input  type="checkbox" id="menClothing" name="menClothing" value="men's clothing">
+                            <label for="menClothing"> Men's Clothing</label><br></div>
+                            <div class="fil">
+                            <input type="checkbox" id="womenClothing" name="womenClothing" value="women's clothing">
+                            <label for="womenClothing"> Women's Clothing</label><br></div>
+                        </div>
+                        
+                        <div class="headers-content-menu-splitter"></div>
+                         <div class="see-results-products">
+                            <a id="see-results">See Results</a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="menu-open" id="menuOpen">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVR4nO3WyQnAMAwFUZcXp/+zDMF9TDrQJcYLmdfBRwimFEmSBgFuoLG/BtRsyMM5+i+GVCDYXwDX51+SJEmaCDN+iZ5dxIyfLMx4SZJ0Gsz4JXp2ETN+sjDjJUlloBfbFyzbu4GNjwAAAABJRU5ErkJggg=="
+                        alt="Open-Drawer">
+                </button>
+            </div>
+            <div class="mobile-headers-content-center">
+                VENIA
+            </div>
+            <div class="mobile-headers-content-right">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVElEQVR4nO3SMUvDQBjG8UixDgZx6li/RifBLgpO2u/RXa2LiGKXbl1dFFeL7jq42S2bLhYqiuDUpQjlL6dvMdTLe4fmxKEPhIa+99yvlzSKpvlvAUrADXBr7v8STfhKMsaBAtACXoD1UGgycb8EnKd+0DAXnO9oaeK7N/l8Bc5ywbGgGTOTZWBGHvnPcD7f2bGUf5uh7FXwgTfJPxs+8G4AuOEDty3FLWAe2FY219a0feCOpbgoszkFLsqa2DLr+MBdS3E/NbcmNd+zjLs+8LNjYxdsy5MLnQVGGeVY1jxaZn2ZLWR0R2ZvDS5nnQhYkTWHltmBzKpKv6zBFaV4IWuKgpuT9w2a+mNdKv2KBtfQs6N0G45uTYPrjvLHyeWRxnJVHScdp67BTcLlSINPA8InGnwdEL7S4PuA8J0GDwLCAw3uBYQfNHgtEN4DVjPhaaKAeQfwCi7zcIO1CwAAAABJRU5ErkJggg=="
+                    alt="Cart">
+            </div>
+        </div>
+    </div>
+    <div id="content-container">
+        <div id="men" class="men-content">
+            <div id="men" class="men-content">
+                <div class="men-banner-row">
+                    <div class="men-title-col">
+                        <div>Men's</div>
+                        <div>Outerwear</div>
+                        <div class="men-splitter"></div>
+                    </div>
+                    <div class="men-banner-img">
+                        <img class="men-img" src="assets/images/banner.png" alt="banner">
+                    </div>
+                </div>
+                <div class="mob-men-banner-row">
+                    <div class="mob-men-banner">
+                        <div class="mob-men-banner-img">
+                            <img class="men-img" src="./assets/images/banner.png" alt="banner">
+                        </div>
+                        <div class="mob-men-title-col">
+                            <div>Men's</div>
+                            <div>Outerwear</div>
+                            <div class="men-splitter"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="search-barmob">
+                        <input type="search" id="search-productsmob" name="search-productsmob" placeholder="Search Products...">
+                        <div id="clear-icons" class="clear-icons"></div>
+                    </div>
+    
+                </div>
+               
+                <div class="men-content-product">
+                    <div class="men-left">
+                        <div class="men-path">Clothing / Men's / Outerwear</div>
+                        <div class="filter-headers-content-title">Filters</div>
+                        <div class="men-left-splitter"></div>
+                        <div class="men-filter">
+                            <div class="filter-subheader-title">Categories</div>
+                           
+                            <div class="fil"><input style="height: 15px;
+    width: 20px;" type="checkbox" id="jewellerys" name="jewellery" value="jewelery">
+                                <label for="jewellery"> Jewellery</label><br></div>
+                                <div class="fil"><input style="height: 15px;
+    width: 20px;"type="checkbox" id="electronicss" name="electronics" value="electronics">
+                            <label for="electronics"> Electronics</label><br></div>
+                            <div class="fil"><input style="height: 15px;
+    width: 20px;" type="checkbox" id="menClothings" name="menClothing" value="men's clothing">
+                            <label for="menClothing"> Men's Clothing</label><br></div>
+                            <div class="fil"><input style="height: 15px;
+    width: 20px;" type="checkbox" id="womenClothings" name="womenClothing" value="women's clothing">
+                            <label for="womenClothing"> Women's Clothing</label><br></div>
+                        </div>
+                        <div class="men-left-splitter"></div>
+                    </div>
+                    <div class="men-right">
+                        <div class="men-right-topbar">
+                            <div class="result-count">0 Results</div>
+                            <div class="men-sort">
+                                <label for="sort-select">Sort by:</label>
+                                <select id="sort-select">
+                                  
+                                    <option value="price-asc">Price: Low to High</option>
+                                    <option value="price-desc">Price: High to Low</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mob-men-topbar">
+                            <div class="mob-men-path">Clothing / Men's / Outerwear</div>
+                            <div class="mob-filter-sort">
+                              <div class="mob-filter"  id="openModalButton" >
+                                <img class="mob-filter-img" src="./assets/images/sliders.svg">
+                                <div>Filter Results</div>
+                                </div>
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">x</span>
+                                        <div class="checkbox-container">
+                                            <li style="list-style: none;margin: 20px;" class="innerlist"><label>
+                                                <input type="checkbox" class="category-checkbox" value="jewelery"> Jewelery
+                                            </label></li>
+                                            <li style="list-style: none;    margin: 20px;" class="innerlist" > <label>
+                                                <input type="checkbox" class="category-checkbox" value="men's clothing"> Men's Clothing
+                                            </label></li>
+                                            <li style="list-style: none;    margin: 20px;" class="innerlist"><label>
+                                                <input type="checkbox" class="category-checkbox" value="women's clothing"> Women's Clothing
+                                            </label></li>
+                                            <li style="list-style: none;    margin: 20px;" class="innerlist"><label>
+                                                <input type="checkbox" class="category-checkbox" value="electronics"> Electronics
+                                            </label></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="mob-sort" >
+                                    <img class="mob-sort-img" src="./assets/images/arrow-up.svg">
+                                    <img class="mob-sort-img" src="./assets/images/arrow-down.svg">
+                                    <div> Sort Products</div>
+                                </div>
+                            </div>
+                            <div class="result-countmob">0 Results</div>
+                        </div>
+                        <div id="loader" class="loader"></div>
+                        <div class="products-list"></div>
+                        <div id="no-products-message" class="hidden">
+                            
+                            
+                            No Products Found
+                        </div>
+                        <div id="no-products" style="display: none;">No Products Found</div>
+                        
+                        <div class="load-more-products">
+                            <a id="load-more">Load More</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-content-container">
+        <div class="footer-content">
+            <div class="footer-content-splitter"></div>
+            <div class="footer-content-content-row">
+                <div class="footer-content-content-col">
+                    <div class="footer-content-content-col-title">Account</div>
+                    <div class="footer-content-content-col-label">Sign In</div>
+                    <div class="footer-content-content-col-label">Register</div>
+                    <div class="footer-content-content-col-label">Order Status</div>
+                    <div class="footer-content-content-col-label">Returns</div>
+                </div>
+                <div class="footer-content-content-col">
+                    <div class="footer-content-content-col-title">About Us</div>
+                    <div class="footer-content-content-col-label">Our Story</div>
+                    <div class="footer-content-content-col-label">Email Sign Up</div>
+                    <div class="footer-content-content-col-label">Give Back</div>
+                </div>
+                <div class="footer-content-content-col">
+                    <div class="footer-content-content-col-title">Help</div>
+                    <div class="footer-content-content-col-label">Live Chat</div>
+                    <div class="footer-content-content-col-label">Contact Us</div>
+                    <div class="footer-content-content-col-label">Order Status</div>
+                    <div class="footer-content-content-col-label">Returns</div>
+                </div>
+                <div class="footer-content-content-col">
+                    <div class="footer-content-content-col-title">Follow Us!</div>
+                    <div class="footer-content-content-col-label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Moi,
+                        incidunt.
+                    </div>
+                    <div class="footer-content-content-col-icons">
+                        <img src="./assets/images/instagram.svg" alt="instagram">
+                        <img src="./assets/images/facebook.svg" alt="facebook">
+                        <img src="./assets/images/twitter.svg" alt="twitter">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mob-footer-content-content-row">
+                <div class="mob-footer-content-content-col">
+                    <div class="mob-footer-content-content-col-title">Account</div>
+                    <div class="mob-footer-content-content-col-label">Sign In</div>
+                    <div class="mob-footer-content-content-col-label">Register</div>
+                    <div class="mob-footer-content-content-col-label">Order Status</div>
+                </div>
+                <div class="mob-footer-content-content-col">
+                    <div class="mob-footer-content-content-col-title">About Us</div>
+                    <div class="mob-footer-content-content-col-label">Our Story</div>
+                    <div class="mob-footer-content-content-col-label">Careers</div>
+                </div>
+                <div class="mob-footer-content-content-col">
+                    <div class="mob-footer-content-content-col-title">Help</div>
+                    <div class="mob-footer-content-content-col-label">Contact Us</div>
+                    <div class="mob-footer-content-content-col-label">Order Status</div>
+                    <div class="mob-footer-content-content-col-label">Returns</div>
+                </div>
+                <div class="mob-footer-content-content-col">
+                    <div class="mob-footer-content-content-col-title">Follow Us!</div>
+                    <div class="mob-footer-content-content-col-label">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Modi,
+                        incidunt.
+                    </div>
+                    <div class="mob-footer-content-content-col-icons">
+                        <img src="./assets/images/instagram.svg" alt="instagram">
+                        <img src="./assets/images/facebook.svg" alt="facebook">
+                        <img src="./assets/images/twitter.svg" alt="twitter">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content-splitter"></div>
+
+            <div class="footer-content-content-row">
+                <div class="footer-content-content-col">
+                    <div class="footer-content-content-col-title">V E N I A</div>
+                </div>
+                <div class="footer-content-content-bottom-col">
+                    <div class="footer-content-content-col-label-address">©️ Comapany Name Address Ave, City Name, State ZIP
+                    </div>
+                </div>
+                <div class="footer-content-content-bottom-row">
+                    <div class="footer-content-content-row-label underline">Terms of Use</div>
+                    <div class="footer-content-content-row-label underline">Privacy Policy</div>
+                </div>
+            </div>
+
+            <div class="mob-footer-content-content-row">
+                <div class="mob-footer-content-content-bottom-row">
+                    <div class="mob-footer-content-content-row-label underline">Terms of Use</div>
+                    <div class="mob-footer-content-content-row-label underline">Privacy Policy</div>
+                </div>
+                <div class="mob-footer-content-content-bottom-col">
+                    <div class="mob-footer-content-content-col-label-address">
+                        <div>©️ Comapany Name </div>
+                        <div>Address Ave, City Name, State ZIP
+                        </div>
+                    </div>
+                    <div class="mob-footer-content-content-bottom-col-label">
+                        V E N I A
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
